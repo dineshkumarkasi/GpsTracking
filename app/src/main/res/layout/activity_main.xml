@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2C3E50"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_labellat"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
         android:text="Lat:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,8 +23,10 @@
         android:id="@+id/tv_lat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="32dp"
         android:text="0.00"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_labellat"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,8 +34,10 @@
         android:id="@+id/tv_labellon"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
-        android:text="lon:"
+        android:text="Lon:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_labellat" />
 
@@ -37,8 +45,10 @@
         android:id="@+id/tv_lon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="16dp"
         android:text="0.00"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_labellon"
         app:layout_constraintTop_toBottomOf="@+id/tv_lat" />
 
@@ -46,8 +56,10 @@
         android:id="@+id/tv_labelaltitude"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:text="Altitude:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_labellon" />
 
@@ -55,7 +67,9 @@
         android:id="@+id/tv_altitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:text="0.00"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_labelaltitude"
         app:layout_constraintTop_toTopOf="@+id/tv_labelaltitude" />
 
@@ -63,8 +77,10 @@
         android:id="@+id/tv_labelaccuracy"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:text="Accuracy:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_labelaltitude" />
 
@@ -72,7 +88,9 @@
         android:id="@+id/tv_accuracy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:text="0.00"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_labelaccuracy"
         app:layout_constraintTop_toTopOf="@+id/tv_labelaccuracy" />
 
@@ -80,8 +98,10 @@
         android:id="@+id/tv_labelspeed"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:text="Speed:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_labelaccuracy" />
 
@@ -89,7 +109,9 @@
         android:id="@+id/tv_speed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:text="0.00"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_labelspeed"
         app:layout_constraintTop_toTopOf="@+id/tv_labelspeed" />
 
@@ -98,7 +120,8 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text = "Sensor:"
+        android:text="Sensor:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sw_gps" />
 
@@ -106,7 +129,8 @@
         android:id="@+id/tv_sensor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text= "Cell Tower + Wifi"
+        android:text="Cell Tower + Wifi"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_labelsensor"
         app:layout_constraintTop_toTopOf="@+id/tv_labelsensor" />
 
@@ -115,6 +139,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Updates:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sw_locationsupdates" />
 
@@ -123,6 +148,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Off"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_labelupdates"
         app:layout_constraintTop_toTopOf="@+id/tv_labelupdates" />
 
@@ -133,17 +159,18 @@
         android:layout_marginTop="16dp"
         android:checked="true"
         android:text="Location Updates"
+        android:textColor="#ECF0F1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <Switch
         android:id="@+id/sw_gps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="GPS/SavePower"
+        android:text="GPS/Save Power"
+        android:textColor="#ECF0F1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_labelupdates" />
@@ -152,6 +179,7 @@
         android:id="@+id/tv_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toEndOf="@+id/tv_lbladdress"
         app:layout_constraintTop_toTopOf="@+id/tv_lbladdress" />
 
@@ -159,10 +187,24 @@
         android:id="@+id/tv_lbladdress"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:text="Address:"
+        android:textColor="#ECF0F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_labelspeed" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="427dp"
+        android:layout_height="280dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lbladdress"
+        app:layout_constraintVertical_bias="0.834" />
 
     <View
         android:id="@+id/divider"
@@ -171,6 +213,7 @@
         android:layout_marginTop="32dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintTop_toBottomOf="@+id/tv_address"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
